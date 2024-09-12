@@ -1,0 +1,233 @@
+body {
+    padding: 0%;
+    margin: 0;
+}
+
+.tex-format{
+font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ----------------------------------------- */
+#principal {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/IMG/nutritionbanner.jpg);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+}
+
+#principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#principal>* {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.title-principal {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.title-principal h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ------------------------------------------------ */
+#introduccion{
+    width: 100%;
+    height: auto;
+    display: flex; 
+    justify-content: space-evenly; /* Asegura que los elementos estén a la izquierda y derecha */
+    align-items: center;
+    padding: 2%;
+}
+
+.intro-content{
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    line-height: 30px;
+}
+
+.intro-content h2{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.intro-img{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: 240px; 
+  }
+
+  @media (max-width: 768px) {
+    .tex-format{
+        font-size: 16px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+    }
+    #introduccion{
+        height: auto;
+        flex-direction: column;
+    }
+    .intro-content{
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+    .intro-img{
+        width: 60%;
+        height: auto;
+        display: flex;
+    }
+  }
+
+/* ------------------------------------- */
+#beneficios {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    /* border: 1px solid black; */
+  }
+
+  #beneficios h2 {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  .bene-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 2%;
+  }
+
+  .bene-container1, .bene-container2, .bene-container3 {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 30%;
+    text-align: center;
+  }
+
+  .bene-container-img img{
+    padding: 10%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .bene-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .bene-container {
+      flex-direction: column;
+    }
+    .bene-container1, .bene-container2, .bene-container3 {
+      width: 100%;
+    }
+  }
+/* ---------------------------- */
+  #consejos {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(/IMG/faamily.jpg);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+  }
+
+  #consejos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí (0.5 es el valor de opacidad) */
+    z-index: 1;
+  }
+
+  #consejos > * {
+    position: relative;
+    z-index: 2;
+    color: white; 
+    text-align: center;
+  }
+
+  #consejos h2 {
+    font-size: 26px;
+    padding-top: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .consejo-content{
+    width: 100%;
+    height: 60%;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .consejo-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .consejo-content1, .consejo-content2,
+  .consejo-content3, .consejo-content4{
+    width: 20%;
+    height: auto;
+    /* border: solid wheat 1px; */
+  }
+
+
+  @media (max-width: 768px) {
+    .consejo-content {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .consejo-content1, .consejo-content2,
+    .consejo-content3, .consejo-content4{
+      width: 100%;
+    }
+  }
