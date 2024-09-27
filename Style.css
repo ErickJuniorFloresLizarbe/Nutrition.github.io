@@ -1,279 +1,244 @@
 body {
-  padding: 0%;
-  margin: 0;
-  
+  padding: 0px;
+  margin: 0px;
 }
 
-.tex-format{
-font-size: 20px;
-font-family: "Roboto", sans-serif;
-font-weight: 300;
-font-style: normal;
+.titleformat{
+  font-family: "Gowun Batang", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
 }
 
-/* ----------------------------------------- */
-#principal {
+.texformat{
+  font-size: 16px;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  font-style: normal;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .titleformat{
+    font-size: 18px;
+  }
+
+  .texformat{
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+/* ----------------------------seccion 2---------------------------- */
+.seccion-1 {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background-image: url(IMG/nutritionbanner.jpg);
   background-size: cover;
-  background-position: center;
-  align-content: center;
-}
-
-#principal::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-#principal>* {
   position: relative;
-  z-index: 2;
-  color: white;
-}
-
-.title-principal {
-  width: auto;
-  height: auto;
-  text-align: center;
-}
-
-.title-principal h1 {
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-style: normal;
-}
-
-/* ------------------------------------------------ */
-#introduccion{
-  width: 100%;
-  height: auto;
-  display: flex; 
-  justify-content: space-evenly; /* Asegura que los elementos estén a la izquierda y derecha */
-  align-items: center;
-  padding: 2%;
-}
-
-.intro-content{
-  width: 40%;
-  height: auto;
-  padding: 2%;
-  line-height: 30px;
-}
-
-.intro-content h2{
-  font-size: 26px;
-  font-weight: 500;
-}
-
-.intro-img{
-  width: 40%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.intro-img img {
-  max-width: 100%;
-  height: 240px; 
-}
-
-@media (max-width: 768px) {
-  .tex-format{
-      font-size: 16px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-  }
-  #introduccion{
-      height: auto;
-      flex-direction: column;
-  }
-  .intro-content{
-      width: 100%;
-      height: auto;
-      padding: 5%;
-  }
-  .intro-img{
-      width: 60%;
-      height: auto;
-      display: flex;
-  }
-}
-
-/* ------------------------------------- */
-#beneficios {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  /* border: 1px solid black; */
-}
-
-#beneficios h2 {
-  font-size: 26px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 2%;
-}
-
-.bene-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  width: 90%;
-  margin: 0 auto;
-  height: auto;
-  margin-bottom: 2%;
-}
-
-.bene-container1, .bene-container2, .bene-container3 {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  width: 30%;
-  text-align: center;
-}
-
-.bene-container-img img{
-  padding: 10%;
-  max-width: 100%;
-  height: 200px;
-}
-
-.bene-container h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  .bene-container {
-    flex-direction: column;
-  }
-  .bene-container1, .bene-container2, .bene-container3 {
-    width: 100%;
-  }
-}
-/* ---------------------------- */
-#consejos {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-image: url(IMG/faamily.jpg);
-  background-size: cover;
-  background-position: center;
-  align-content: center;
-}
-
-#consejos::before {
-  content: "";
+.seccion-1::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí (0.5 es el valor de opacidad) */
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-#consejos > * {
+.seccion-1 > * {
   position: relative;
   z-index: 2;
-  color: white; 
+}
+
+.seccion-1 h1 {
+  color: white;
+  text-align: center;
+  font-size: 46px;
+}
+
+.seccion-1 svg {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+}
+
+@media (max-width: 768px) {
+  .seccion-1 {
+    height: 80vh;
+    align-items: center;
+  }
+  .seccion-1 h1 {
+    margin-top: 0%;
+    font-size: 30px;
+  }
+}
+
+/* ----------------------------seccion 2---------------------------- */
+.seccion-2 {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+.container{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.one-content{
+  width: 40%;
+  height: 70vh;
+  margin: 2%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes breathingShadow {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  50% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px;
+  }
+  75% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px;
+  }
+  100% {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}
+
+.subconten{
+  width: 100%;
+  height: auto;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  animation: breathingShadow 2s ease-in-out infinite; 
+}
+
+.icon-img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px; 
+}
+
+/* ------------------------------------- */
+.two-content {
+  padding-left: 2%;
+  width: 40%;
+  height: 100%;
+  margin: 2%;
+}
+
+.two-content button {
+  margin-top: 5%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: white;
+  animation: breathingShadow 2s ease-in-out infinite
+}
+
+
+@media (max-width: 768px) {
+  .container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .one-content{
+    width: 90%;
+  }
+  .subconten{
+    padding: 15px 5px 15px 5px;
+  }
+  .two-content{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .two-content p {
+    text-align: justify;
+    padding: 0px 10px;
+  }
+
+  .two-content button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    margin-top: 0%;
+    font-size: 12px;
+  }
+}
+
+/* ----------------------------seccion 2---------------------------- */
+.seccion-3 {
+  width: 100%;
+  height: auto;
+  padding: 100px 0px;
+  /* border: 1px solid black; */
+  align-content: center;
   text-align: center;
 }
 
-#consejos h2 {
-  font-size: 26px;
-  padding-top: 40px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.seccion-3 p {
+  text-align: center;
+  padding: 0% 15%;
 }
 
-.consejo-content{
-  width: 100%;
-  height: 60%;
-  padding: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.consejo-content h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.consejo-content1, .consejo-content2,
-.consejo-content3, .consejo-content4{
-  width: 20%;
-  height: auto;
-  /* border: solid wheat 1px; */
-}
-
-
-@media (max-width: 768px) {
-  .consejo-content {
-    flex-direction: column;
-    padding: 20px;
-  }
-  .consejo-content1, .consejo-content2,
-  .consejo-content3, .consejo-content4{
-    width: 100%;
-  }
-}
-
-/* ---------------------------------- */
-#testimonios{
-width: 100%;
-height: auto;
-padding: 20px;
-/* border: black 1px solid; */
-}
-
-#testimonios h2 {
-font-size: 26px;
-font-weight: 500;
-text-align: center;
-margin-bottom: 2%;
-}
-
-.test-container{
-width: 100%;
-height: 80%;
-display: flex;
-align-items: center;
-justify-content: space-around;
-
-}
-
-.test-subcontainer{
-width: 40%;
-height: 80%;
-}
-
-.test-subcontainer-content h3 {
-font-size: 20px;
-margin-bottom: 10px;
-font-weight: 600;
+.seccion-3 button {
+  margin-top: 2%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background-color: white;
+  animation: breathingShadow 2s ease-in-out infinite
 }
 
 @media (max-width: 768px) {
-.test-container{
-  flex-direction: column;
-}
+  .seccion-3 {
+    background-image: url(IMG/nutritionbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0px;
+    text-align: start;
+    position: relative;
+  }
+  .seccion-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .seccion-3 > * {
+    position: relative;
+    z-index: 2;
+  }
+  .seccion-3 h2 {
+    text-align: left;
+    color: #fff;
+    padding: 0px 20px;
+  }
 
-.test-subcontainer{
-  width: 100%;
-}
+  .seccion-3 p {
+    text-align: justify;
+    color: #fff;
+    padding: 0px 20px;
+  }
+
+  .seccion-3 button {
+    padding: 8px 12px;
+    margin-left: 20px;
+  }
 }
