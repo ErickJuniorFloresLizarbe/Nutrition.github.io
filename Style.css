@@ -99,6 +99,7 @@ body {
   flex-direction: column;
   display: flex;
   justify-content: space-around;
+  /* border: 1px solid black;  */
 }
 
 @keyframes breathingShadow {
@@ -157,9 +158,11 @@ body {
   }
   .one-content{
     width: 90%;
+    height: auto;
   }
   .subconten{
-    padding: 15px 5px 15px 5px;
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 30px;
   }
   .two-content{
     width: 90%;
